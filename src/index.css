@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.circle {
+  position: relative;
+}
+.circle.invert:before {
+  left: auto;
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  top: -300px;
+  left: -650px;
+  right: 0;
+  bottom: 0;
+  width: 1000px;
+  height: 1000px;
+  background: url('../src/assets/fondos/fondo1.svg') no-repeat;
+  background-size: contain;
+  background-position: 100%;
+}
+
+.circle.green:before {
+  width: 900px;
+  height: 900px;
+  top: -80px;
+}
+circle.grey.small:before {
+  top: 550px;
+}
+.circle.grey.small:before {
+  background: url('../src/assets/fondos/fondo2.svg') no-repeat;
+  top: -230px;
+  left: -417px;
+}
+.div-1 {
+    width: 469px;
+    height: 264px;
+    background-image: url(../src/assets/imagenes/team.jpeg);
+    background-size: contain;
+    margin-left: auto;
+    transform: translate(-30px,-40px);
+}
+.div-1::before {
+    display: block;
+    content: "";
+    padding-bottom: 94.57627%;
+}
+.div-2 {
+  position: absolute;
+  max-width: 406px;
+  width: 406px;
+  height: 228px;
+  background-image: url(../src/assets/imagenes/team.jpg);
+  background-size: contain;
+  transform: translate(23px,-265px);
+}
+.div-2 {
+  transform: translateY(-80px);
+}
+.div-2::before{
+    display: block;
+    content: "";
+    padding-bottom: 72.82727%;
+}
+
+.contenedor-divs {
+
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+
+
+
+
+
+@media (max-width: 700px) {
+  .div-1 {
+    width: 100%;
+    height: 200px;
+    background-image: url(../src/assets/imagenes/team.jpeg);
+    margin-left: auto;
+    transform: translate(0px,-43px);
+    background-size: cover;
+}
+.div-2 {
+    position: relative;
+    width: 100%;
+    height: 228px;
+    background-image: url(../src/assets/imagenes/team.jpg);
+    background-size: cover;
+    transform: translate(0px,-43px);
+}
+.contenedor-divs {
+  margin-top: 40px;
+  margin-bottom: 23px;
+}
+
+.d-2 {
+  padding-top: 0px;
+}
+
+}
+@media (max-width: 463px) {
+.div-2 {
+  display: none;
+}
+
+}
+
+
+@media (max-width: 992px) {
+.circle::before {
+    position: relative;
+
+  }
+}
+

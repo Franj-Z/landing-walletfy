@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>temple copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="APPX-348---30.03.20" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="FT_Home_Desktop-Copy" transform="translate(-352.000000, -5318.000000)" stroke="#172B5F" stroke-width="1.44">
+            <g id="temple-copy-2" transform="translate(353.000000, 5319.000000)">
+                <polygon id="Path" points="10.8 0 0 5.76 0 8.64 21.6 8.64 21.6 5.76"></polygon>
+                <line x1="2.16" y1="16.56" x2="2.16" y2="10.8" id="Path"></line>
+                <line x1="7.92" y1="16.56" x2="7.92" y2="10.8" id="Path"></line>
+                <line x1="13.68" y1="16.56" x2="13.68" y2="10.8" id="Path"></line>
+                <line x1="19.44" y1="16.56" x2="19.44" y2="10.8" id="Path"></line>
+                <circle id="Oval" cx="10.8" cy="5.04" r="1.44"></circle>
+                <rect id="Rectangle" x="0" y="18.72" width="21.6" height="2.88"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
