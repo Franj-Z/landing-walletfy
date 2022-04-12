@@ -50,7 +50,7 @@ const SobreNosotros = () => {
                                     <h1 className='h-s'>Conoce a nuestro equipo</h1>
                                     <p className='p-s'>Walletfy fue fundado por estudiantes de la Escuela Da Vinci que querían hacer que la educación financiera fuera más divertida y atractiva para los adultos jóvenes. Hoy, Walletfy cuenta con un equipo diverso de profesionales calificados que lo llevan al siguiente nivel, somos alrededor de... 2 personas.</p>
                                 </div>
-                                <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center">
+                                <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center equipo">
                                     <div className="col">
                                         <div className="card">
                                             <div className="card-body">

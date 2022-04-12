@@ -3,6 +3,7 @@ import Botonera from './componentes/Botonera';
 import Contactos from './componentes/Contactos';
 import SobreNosotros from './componentes/SobreNosotros';
 import Inicio from './componentes/Inicio';
+import Footer from './componentes/Footer';
 
 import {
   BrowserRouter,
@@ -21,6 +22,7 @@ function App() {
                   <Route path='/sobrenosotros' element={<SobreNosotros/>}/>
                   <Route path='/' element={<Inicio/>}/>
           </Routes>
+      <Footer/>
     </BrowserRouter>
       
     </div>
