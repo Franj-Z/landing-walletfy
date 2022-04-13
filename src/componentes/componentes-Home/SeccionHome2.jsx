@@ -1,49 +1,35 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import iconos from '../../assets/iconos';
+import Pastillas from './Pastillas';
 
 const SeccionHome2 = () => {
+    const pastillas = [
+        {
+            id: 1,
+            icono: iconos.Torta,
+            texto: 'Informes ordenados con todos tus gastos.'
+        },
+        {
+            id: 2,
+            icono: iconos.Book,
+            texto: 'Capacitarse y aprender nunca fue tan facil.'
+        },
+        {
+            id: 3,
+            icono: iconos.Bell,
+            texto: 'Notificaciones y Seguimiento en tiempo real.'
+        },  
+    ]
+    const [pastilla, setPastilla] = useState(pastillas);
+
+
     return ( 
         <Fragment>
             <section className='container'>
                 <h2 className='pt-5 pb-5 subtitulo-home'>Walletfy ¡Mucho más que una billetera virtual!</h2>
                 <div className='pastillas'>
                     <div className='row'>
-                            <div className='col-12 col-lg-4 div-h'>
-                                <div className='row d-flex align-items-center'>
-                                        <div className='col-2'>
-                                            <div className='pastilla'>
-                                                <img src={iconos.Torta} alt="Icono Torta" className='pastillaIconoTorta' />
-                                            </div>
-                                        </div>
-                                        <div className='col-10'>
-                                            <p className='descripcionPastillas'>Informes ordenados con todos tus gastos.</p>
-                                        </div>
-                                </div>
-                            </div>
-                            <div className='col-12 col-lg-4 div-h'>
-                                <div className='row d-flex align-items-center'>
-                                        <div className='col-2'>
-                                            <div className='pastilla'>
-                                                <img src={iconos.Book} alt="Icono Torta" className='pastillaIconoLibro' />
-                                            </div>
-                                        </div>
-                                        <div className='col-10'>
-                                            <p className='descripcionPastillas'>Capacitarse y aprender nunca fue tan facil.</p>
-                                        </div>
-                                </div>
-                            </div>
-                            <div className='col-12 col-lg-4 div-h'>
-                                <div className='row d-flex align-items-center'>
-                                        <div className='col-2'>
-                                            <div className='pastilla'>
-                                                <img src={iconos.Bell} alt="Icono Torta" className='pastillaIconoCampana' />
-                                            </div>
-                                        </div>
-                                        <div className='col-10'>
-                                            <p className='descripcionPastillas'>Notificaciones y Seguimiento en tiempo real.</p>
-                                        </div>
-                                </div>
-                            </div>
+                        <Pastillas pastilla = {pastilla}/>
                     </div>
                 </div>
             </section>
