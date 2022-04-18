@@ -33,7 +33,7 @@ function  validate(input){
 
 const SeccionContactos2 = () => {
     
-    const [options, setOptions] = useState('option0');
+    const [options, setOptions] = useState('options');
 
     
     const [input, setInput] = useState(
@@ -62,19 +62,23 @@ const SeccionContactos2 = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
-   //     const info = {nombre, apellido, email, options, comentario}
-   //     console.log(info)
-   //     fetch('/contactos', {
-   //         method: 'POST',
-   //         headers: { "Content-Type": "application/json"},
-   //         body: JSON.stringify(info)
-   //     }).then(() => {
-   //        console.log('se envio correctamente')
-   //     })
+        fetchForm();
 
     }
 
+  
+    
+    async function fetchForm(){
+        const response = await fetch( 'http://localhost:3000/form', {
+            method: 'POST',  
+            headers: { "Content-Type": "application/json"},
+            body: JSON.stringify(input)
+    })  
+    const parsed = await response.json();
+    return parsed.success;
+    }
+    
+ 
     return ( 
         <Fragment>
             <section className="container mb-5">
@@ -121,7 +125,7 @@ const SeccionContactos2 = () => {
                                             <div className="form-group my-3">
                                             <label htmlFor="options">¿De que quieres hablar? *</label>
 
-                                            <select className="form-select" value={options}
+                                            <select className="form-select" name="options" value={options}
                                                 onChange={(e) => setOptions(e.target.value)}>
                                             <option value="option0">-</option>
                                             <option value="option1">Financiero</option>
