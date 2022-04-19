@@ -22,18 +22,23 @@ function  validate(input){
         errors.email = 'el campo email no puede estar vacio'
     };
 
+    if (input.options == ''){
+        errors.options = 'el campo no puede estar vacio'
+    };
 
     if (input.comentario.length < 20){
         errors.comentario = 'el campo comentario debe tener un minimo de 20 caracteres'
     }else if (input.comentario.length > 400){
         errors.comentario = 'ups! tu mensaje es muy largo. debe tener maximo 400 caracteres.'
     }
+     
     return errors;
+   
 }
 
 const SeccionContactos2 = () => {
     
-    const [options, setOptions] = useState('options');
+    const [options, setOptions] = useState('');
 
     
     const [input, setInput] = useState(
@@ -41,6 +46,7 @@ const SeccionContactos2 = () => {
             nombre: '',
             apellido: '',
             email: '',
+            options: '',
             comentario: '',
         }
     )
@@ -50,7 +56,7 @@ const SeccionContactos2 = () => {
 
     const handleChange = (e) => {
         setInput({
-            ...input,
+            ...input, 
             [e.target.name]: e.target.value
         })
         setError(validate({
@@ -69,7 +75,7 @@ const SeccionContactos2 = () => {
   
     
     async function fetchForm(){
-        const response = await fetch( 'http://localhost:3000/form', {
+        const response = await fetch( 'http://localhost:3001/form', {
             method: 'POST',  
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(input)
@@ -126,12 +132,16 @@ const SeccionContactos2 = () => {
                                             <label htmlFor="options">¿De que quieres hablar? *</label>
 
                                             <select className="form-select" name="options" value={options}
-                                                onChange={(e) => setOptions(e.target.value)}>
-                                            <option value="option0">-</option>
+                                                onChange={(e) => setInput(e.target.value)}>
+                                            <option value="">Seleccione una opcion</option>
                                             <option value="option1">Financiero</option>
                                             <option value="option2">Soporte tecnico</option>
                                             <option value="option3">Preguntas y sugerencias</option>
                                             </select>
+
+                                            {error.options && (
+                                                    <p className="text-danger"> {error.options}</p>
+                                                )}
                                             </div>
 
                                             <div className="form-group my-3">
