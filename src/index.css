@@ -17,6 +17,13 @@ code {
 .circle.invert:before {
   left: auto;
 }
+.logo{
+  background: url("../src/assets/iconos/walletfy_logo.png") no-repeat;
+  background-size: contain;
+  background-position: 100%;
+  width: 140px;
+  height: 70px;
+}
 .circle::before {
   content: "";
   position: absolute;
