@@ -46,10 +46,14 @@ a:hover{
 ul{
     list-style-type: none;
 }
-.navbar {
-    background: #edeff0;
+
+.navbar{
     padding-top: 20px;
     margin-bottom: 50px;
+}
+.nav-link{
+    font-family: 'Open Sans';
+    font-size: 16px;
 }
 .footer-w {
     padding-top: 40px;
