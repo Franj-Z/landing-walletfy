@@ -87,7 +87,7 @@ const SeccionContactos2 = () => {
  
     return ( 
         <Fragment>
-            <section className="container mb-5">
+            <section className="mb-5">
                         <div className="row justify-content-center">
                             <div className="col-md-8 borde pb-3 ">
                                 <form onSubmit={handleSubmit}>

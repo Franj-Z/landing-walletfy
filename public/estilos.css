@@ -267,7 +267,10 @@ ul{
     margin-left: auto;
     margin-right: auto;
 }
-
+MapContainer{
+    width: 100wv;
+    height: 100wv;
+  }
 @media (max-width: 400px) {
     .texto-s {
         text-align: center;
@@ -287,5 +290,8 @@ ul{
         opacity: 0;
         transition: opacity .3s cubic-bezier(.645,.045,.355,1),transform .3s cubic-bezier(.645,.045,.355,1);
     }
-
+    MapContainer{
+        width: 100wv;
+        height: 100wv;
+      }
 }
