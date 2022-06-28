@@ -46,10 +46,14 @@ a:hover{
 ul{
     list-style-type: none;
 }
-.navbar {
-    background: #edeff0;
+
+.navbar{
     padding-top: 20px;
     margin-bottom: 50px;
+}
+.nav-link{
+    font-family: 'Open Sans';
+    font-size: 16px;
 }
 .footer-w {
     padding-top: 40px;
@@ -264,9 +268,11 @@ ul{
     margin-right: auto;
 }
 
-.logo {
-    width: 170px;
-}
+
+MapContainer{
+    width: 100wv;
+    height: 100wv;
+  }
 @media (max-width: 400px) {
     .texto-s {
         text-align: center;
@@ -286,5 +292,8 @@ ul{
         opacity: 0;
         transition: opacity .3s cubic-bezier(.645,.045,.355,1),transform .3s cubic-bezier(.645,.045,.355,1);
     }
-
+    MapContainer{
+        width: 100wv;
+        height: 100wv;
+      }
 }

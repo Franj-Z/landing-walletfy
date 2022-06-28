@@ -17,6 +17,12 @@ code {
 .circle.invert:before {
   left: auto;
 }
+.logo{
+  background-size: contain;
+  background-position: 100%;
+  width: 140px;
+  height: 70px;
+}
 .circle::before {
   content: "";
   position: absolute;
@@ -81,9 +87,20 @@ circle.grey.small:before {
     margin-bottom: 200px;
 }
 
+#map {
+  height: 400px;
+  position: relative;
+  outline: currentcolor none medium;
+  }
 
-
-
+img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive{
+  background-image: url("https://unpkg.com/leaflet@1.8.0/dist/images/marker-icon.png") !important;
+  margin-left: 0px !important;
+}
+.contact-img{
+  box-shadow: 5px 5px 5px 5px rgba(0, 133, 228, 0.168);
+  border-radius: 30px;
+}
 
 
 @media (max-width: 700px) {
