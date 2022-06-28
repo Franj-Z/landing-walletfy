@@ -41,7 +41,7 @@ li {
 
 
 a:hover{
-    color: #1F7CFF;
+    color: #38b2e7;
 }
 ul{
     list-style-type: none;
@@ -68,7 +68,7 @@ ul{
     line-height: 5.5rem;
     font-weight: 600;
     text-align: left;
-    color: #1e7dc0;
+    color: #38b2e7;
     font-family: sans-serif;
 }
 .p-home {    
@@ -89,7 +89,7 @@ ul{
     height: 40px;
 }
 .subtitulo-home {
-    color: #1e7dc0;
+    color: #38b2e7;
     font-family: sans-serif;
 }
 .pastilla {
@@ -173,7 +173,7 @@ ul{
 .h2-h {
     margin-bottom: 30px;
     font-family: sans-serif;
-    color: #1e7dc0;
+    color: #38b2e7;
 }
 .div-h {
     margin-bottom: 20px;
@@ -264,6 +264,9 @@ ul{
     margin-right: auto;
 }
 
+.logo {
+    width: 170px;
+}
 @media (max-width: 400px) {
     .texto-s {
         text-align: center;

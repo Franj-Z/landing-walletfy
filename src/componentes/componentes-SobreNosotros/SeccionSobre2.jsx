@@ -7,7 +7,7 @@ const SeccionSobre2 = () => {
             <section className='container'>
                     <div className='row position-relative'>
                         <div className='col-12 col-lg-6 texto-s'>
-                            <h2 className='h3 h-s'>En Walletfy nuestro objetivo principal es brindarle las herramientas necesarias a las personas para su <b>capacitacion en el mundo de las finazas.</b></h2>
+                            <h2 className='h3 h-s'>En Walletfy nuestro objetivo principal es brindar las herramientas necesarias a las personas para su <b>capacitación en el mundo de las finanzas.</b></h2>
                             <p className='p-s'>Creemos que administrar las finanzas debería ser tan fácil como comprar en línea. Debe hacerse en cualquier momento, en cualquier lugar y en unos pocos clics.</p>
                             <p className='p-s'>Lo que comenzó como un simple seguimiento de gastos para un pequeño grupo de personas se ha convertido en una aplicación de finanzas personales que aporta belleza a las finanzas de cientos de miles de usuarios de casi todos los países del mundo.</p>
 

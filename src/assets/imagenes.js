@@ -8,6 +8,7 @@ import profile2 from './imagenes/profile2.jpg';
 import profile3 from './imagenes/profile3.jpg';
 import home2 from './imagenes/home2.png';
 import contactos from './imagenes/contactos.png';
+import logo from './iconos/walletfy.svg';
 
 
 
@@ -24,5 +25,6 @@ export default {
     "Profile3": profile3,
     "Home2": home2,
     "Team3": team3,
-    "Contactos": contactos
+    "Contactos": contactos,
+    "Logo": logo,
 }

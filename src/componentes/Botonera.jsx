@@ -1,12 +1,15 @@
 import React, {Fragment} from "react";
 import { Link } from "react-router-dom";
+import imagenes from "../assets/imagenes";
 
 const Botonera = () => {
     return (  
         <Fragment>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container">
-                        <a className="navbar-brand titulo" href="#">Walletfy</a>
+                            <a className="navbar-brand titulo" href="#">
+                                <img src={imagenes.Logo} alt="logo" className="logo"/>
+                            </a>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                             </button>

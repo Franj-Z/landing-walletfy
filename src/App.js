@@ -4,6 +4,7 @@ import Contactos from './componentes/Contactos';
 import SobreNosotros from './componentes/SobreNosotros';
 import Inicio from './componentes/Inicio';
 import Footer from './componentes/Footer';
+import Contacto2 from './componentes/Contactos2';
 
 import {
   BrowserRouter,
@@ -18,6 +19,7 @@ function App() {
       <BrowserRouter>
       <Botonera/>
             <Routes>
+                  <Route path='/contactos2' element={<Contacto2/>}/>
                   <Route path='/contactos' element={<Contactos/>}/>
                   <Route path='/sobrenosotros' element={<SobreNosotros/>}/>
                   <Route path='/' element={<Inicio/>}/>
