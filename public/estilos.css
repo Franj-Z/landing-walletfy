@@ -9,6 +9,10 @@
     src: url('./tipografias/Harmonia-Bold.ttf');
   }
 @font-face {
+    font-family: 'Harmonia-light';
+    src: url('./tipografias/Harmonia-Light.ttf');
+  }
+@font-face {
     font-family: 'Open-Sans-l';
     src: url('./tipografias/OpenSans-Light.ttf');
   }
@@ -91,6 +95,7 @@ ul{
 .subtitulo-home {
     color: #38b2e7;
     font-family: sans-serif;
+    text-align: center;
 }
 .pastilla {
     background-color: #8566f2;
@@ -98,12 +103,6 @@ ul{
     width: 60px;
     height: 60px;
     margin-right: 20px;
-}
-.pastillas {
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: #f2f2f2;
-    padding-bottom: 40px;
 }
 .pastillaicono {
     max-width: 35px;
@@ -266,6 +265,37 @@ ul{
 
 .logo {
     width: 170px;
+}
+.logo2 {
+    width: 180px;
+}
+.anuncio {
+        background: #242828;
+        border-radius: 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        padding: 34px 40px;
+        height: 127px;
+}
+.anunciop {
+    color: white;
+    font-family: 'Harmonia';
+    font-size: 20px;
+}
+
+.pasti {
+    padding: 30px;
+    margin: 15px 0;
+    background: #f6f6f6;
+}
+.tituPasti {
+    font-family: "Harmonia";
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 @media (max-width: 400px) {
     .texto-s {

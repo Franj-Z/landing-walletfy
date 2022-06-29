@@ -8,7 +8,7 @@ const CardEquipo = (props) => {
                 props.equipo.map(miembro => (
 
                 <div key={miembro.id} className="col">
-                <div className="card">
+                <div className="card card-equipo">
                     <div className="card-body">
                             <img src={miembro.imagen} alt={miembro.nombre} />
                                 <h5 className="card-title pt-3">{miembro.nombre}</h5>

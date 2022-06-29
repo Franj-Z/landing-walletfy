@@ -15,7 +15,7 @@ const SeccionHome1 = () => {
                             <a href="https://play.google.com/store?hl=es_AR&gl=US" className='btn btn-dark ms-3 mt-3'><img src={iconos.Android} alt="icono android" /></a>
                         </div>
                     </div>
-                    <div className='col-12 col-lg-6 d-flex justify-content-center'>
+                    <div className='col-12 col-lg-6 d-flex justify-content-center d-none d-lg-block'>
                         <img src={imagenes.Home} alt="Imagen de la Home" className='img-fluid' />
                     </div>
                 </div>

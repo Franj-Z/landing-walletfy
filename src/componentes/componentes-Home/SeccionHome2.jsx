@@ -1,23 +1,26 @@
 import React, { Fragment, useState } from 'react'
 import iconos from '../../assets/iconos';
 import Pastillas from './Pastillas';
-
+import imagenes from '../../assets/imagenes'
 const SeccionHome2 = () => {
     const pastillas = [
         {
             id: 1,
-            icono: iconos.Torta,
-            texto: 'Informes ordenados con todos tus gastos.'
+            titulo: 'Capacitación',
+            icono: imagenes.WallyLibro,
+            texto: 'Capacitarse y aprender nunca fue tan fácil. Lecciones ordenadas desde el nivel más básico hasta el más avanzado del mundo de las finanzas.'
         },
         {
             id: 2,
-            icono: iconos.Book,
-            texto: 'Capacitarse y aprender nunca fue tan facil.'
+            titulo: 'Información detallada',
+            icono: imagenes.WallyTorta,
+            texto: 'Informes ordenados con todos tus gastos junto a poderosos gráficos para saber a dónde está yendo tu dinero.'
         },
         {
             id: 3,
-            icono: iconos.Bell,
-            texto: 'Notificaciones y Seguimiento en tiempo real.'
+            titulo: 'Recordatorios',
+            icono: imagenes.WallyTips,
+            texto: 'Notificaciones y seguimiento en tiempo real mostrando cálculos y porcentajes en el momento trayendo así un resumen completo de tu dinero.'
         },  
     ]
     const [pastilla, setPastilla] = useState(pastillas);
@@ -33,6 +36,7 @@ const SeccionHome2 = () => {
                     </div>
                 </div>
             </section>
+
         </Fragment>
      );
 }

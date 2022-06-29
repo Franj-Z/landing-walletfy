@@ -29,6 +29,7 @@ code {
   background: url('../src/assets/fondos/fondo1.svg') no-repeat;
   background-size: contain;
   background-position: 100%;
+  opacity: 0.3;
 }
 
 .circle.green:before {
@@ -43,6 +44,7 @@ circle.grey.small:before {
   background: url('../src/assets/fondos/fondo2.svg') no-repeat;
   top: -230px;
   left: -417px;
+  opacity: 0.1;
 }
 .div-1 {
     width: 469px;
@@ -81,8 +83,14 @@ circle.grey.small:before {
     margin-bottom: 200px;
 }
 
+.anuncio {
+  background-image: url('assets/imagenes/tramita.png');
+}
 
+.card-equipo {
+  background-image: url('assets/imagenes/tramita2.png');
 
+}
 
 
 
@@ -119,7 +127,12 @@ circle.grey.small:before {
 }
 
 }
-
+@media (max-width: 767px) {
+  .card-equipo {
+    background-image: url('assets/imagenes/tramita3.png');
+  
+  }
+}
 
 @media (max-width: 992px) {
 .circle::before {

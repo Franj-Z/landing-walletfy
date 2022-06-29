@@ -20,6 +20,14 @@ const SeccionSobre3 = () => {
             email: 'mailto:francisco.zoric@davinci.edu.ar',
             like: 'https://ar.linkedin.com/',
             insta: 'https://www.instagram.com/?hl=es' },
+        
+        {   id: 3,
+            imagen: imagenes.Profile4, 
+            nombre: 'Elizabeth Milagros Zoric', 
+            cargo: 'Community Manager', 
+            email: 'mailto:elizabeth.zoric@davinci.edu.ar',
+            like: 'https://ar.linkedin.com/',
+            insta: 'https://www.instagram.com/?hl=es' },
     ]
 
     const [equipo, setEquipo] = useState(equipoTrabajo);
