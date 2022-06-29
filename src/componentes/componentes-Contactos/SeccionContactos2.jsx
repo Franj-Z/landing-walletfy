@@ -22,18 +22,23 @@ function  validate(input){
         errors.email = 'el campo email no puede estar vacio'
     };
 
+    if (input.options == ''){
+        errors.options = 'el campo no puede estar vacio'
+    };
 
     if (input.comentario.length < 20){
         errors.comentario = 'el campo comentario debe tener un minimo de 20 caracteres'
     }else if (input.comentario.length > 400){
         errors.comentario = 'ups! tu mensaje es muy largo. debe tener maximo 400 caracteres.'
     }
+     
     return errors;
+   
 }
 
 const SeccionContactos2 = () => {
     
-    const [options, setOptions] = useState('option0');
+    const [options, setOptions] = useState('');
 
     
     const [input, setInput] = useState(
@@ -41,6 +46,7 @@ const SeccionContactos2 = () => {
             nombre: '',
             apellido: '',
             email: '',
+            options: '',
             comentario: '',
         }
     )
@@ -50,7 +56,7 @@ const SeccionContactos2 = () => {
 
     const handleChange = (e) => {
         setInput({
-            ...input,
+            ...input, 
             [e.target.name]: e.target.value
         })
         setError(validate({
@@ -62,22 +68,26 @@ const SeccionContactos2 = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
-   //     const info = {nombre, apellido, email, options, comentario}
-   //     console.log(info)
-   //     fetch('/contactos', {
-   //         method: 'POST',
-   //         headers: { "Content-Type": "application/json"},
-   //         body: JSON.stringify(info)
-   //     }).then(() => {
-   //        console.log('se envio correctamente')
-   //     })
+        fetchForm();
 
     }
 
+  
+    
+    async function fetchForm(){
+        const response = await fetch( 'http://localhost:3001/form', {
+            method: 'POST',  
+            headers: { "Content-Type": "application/json"},
+            body: JSON.stringify(input)
+    })  
+    const parsed = await response.json();
+    return parsed.success;
+    }
+    
+ 
     return ( 
         <Fragment>
-            <section className="container mb-5">
+            <section className="mb-5">
                         <div className="row justify-content-center">
                             <div className="col-md-8 borde pb-3 ">
                                 <form onSubmit={handleSubmit}>
@@ -121,13 +131,17 @@ const SeccionContactos2 = () => {
                                             <div className="form-group my-3">
                                             <label htmlFor="options">¿De que quieres hablar? *</label>
 
-                                            <select className="form-select" value={options}
-                                                onChange={(e) => setOptions(e.target.value)}>
-                                            <option value="option0">-</option>
+                                            <select className="form-select" name="options" value={options}
+                                                onChange={(e) => setInput(e.target.value)}>
+                                            <option value="">Seleccione una opcion</option>
                                             <option value="option1">Financiero</option>
                                             <option value="option2">Soporte tecnico</option>
                                             <option value="option3">Preguntas y sugerencias</option>
                                             </select>
+
+                                            {error.options && (
+                                                    <p className="text-danger"> {error.options}</p>
+                                                )}
                                             </div>
 
                                             <div className="form-group my-3">
