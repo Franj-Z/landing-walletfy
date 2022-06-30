@@ -90,7 +90,10 @@ circle.grey.small:before {
 .card-equipo {
   background-image: url('assets/imagenes/tramita2.png');
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.261);
-  
+}
+img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
+  background-image: url("https://unpkg.com/leaflet@1.8.0/dist/images/marker-icon.png") !important;
+  margin-left: 0px !important;
 }
  @media (max-width: 767px) {
   .card-equipo {
