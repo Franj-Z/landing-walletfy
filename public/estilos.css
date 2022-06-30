@@ -39,21 +39,20 @@ a {
     padding-left: 0.5rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
-li {
-    color: #4B5D72;
-}
-
 
 a:hover{
-    color: #38b2e7;
+    color: #38b2e7 !important;
 }
 ul{
     list-style-type: none;
 }
 .navbar {
-    background: #edeff0;
+    background-image: url(http://localhost:3000/static/media/tramita.0c8dab8c86177270cb03.png);
     padding-top: 20px;
     margin-bottom: 50px;
+}
+footer{
+     background-image: url(http://localhost:3000/static/media/tramita.0c8dab8c86177270cb03.png);
 }
 .footer-w {
     padding-top: 40px;
@@ -93,7 +92,7 @@ ul{
     height: 40px;
 }
 .subtitulo-home {
-    color: #38b2e7;
+    color: #8566f2;
     font-family: sans-serif;
     text-align: center;
 }
@@ -136,6 +135,10 @@ ul{
 }
 .li-b {
     margin-bottom: 15px;
+}
+.boton{
+    font-size: 16px;
+    font-family: 'Open-Sans';
 }
 .boton::after {
     position: absolute;
@@ -182,7 +185,7 @@ ul{
 .encabezado-s {
     text-align: center;
     margin-bottom: 50px;
-    padding-top: 110px;
+    padding-top: 50px;
     margin-bottom: 125px;
     font-family: 'Open-Sans';
     color: #344554;
@@ -256,7 +259,7 @@ ul{
     width: 100%;
 }
 .img-s {
-    box-shadow: 0 10px 28px 0 hsl(210deg 8% 54% / 20%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.261);
 }
 .equipo {
     margin-left: auto;
@@ -283,24 +286,50 @@ ul{
     font-family: 'Harmonia';
     font-size: 20px;
 }
-
+.pasti-bg{
+    background-image: url(http://localhost:3000/static/media/tramita.0c8dab8c86177270cb03.png);
+}
 .pasti {
     padding: 30px;
     margin: 15px 0;
-    background: #f6f6f6;
+    background: #8566f2;
+    border-radius: 10px;
 }
 .tituPasti {
     font-family: "Harmonia";
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 30px;
 }
-@media (max-width: 400px) {
+#map{
+    height: 400px;
+}
+.mockup-mobile{
+    display: none;
+}
+.title-contact{
+    color: rgb(79, 79, 79) !important;
+}
+@media (max-width: 430px) {
     .texto-s {
         text-align: center;
     }
+    
+.encabezado-s {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 0px;
+    font-family: 'Open-Sans';
+    color: #344554;
+}
+.mockup-mobile{
+    display: flex;
+}
+.img-s {
+    box-shadow: 5px 5px 5px rgba(56, 188, 236, 0.261);
+}
 }
 
 @media (max-width: 991px){
@@ -319,7 +348,7 @@ ul{
 
 }
 
-.MapContainer{
+MapContainer{
     width: 100wv;
     height: 100wv;
   }

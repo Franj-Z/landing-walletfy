@@ -28,10 +28,10 @@ const SeccionHome2 = () => {
 
     return ( 
         <Fragment>
-            <section className='container-fluid'>
+            <section className='container-fluid my-5 pasti-bg'>
 
                 <div className='container'>
-                            <h2 className='pt-5 pb-5 subtitulo-home'>Walletfy ¡Mucho más que una billetera virtual!</h2>
+                            <h2 className='pt-5 mb-3 fw-bold subtitulo-home'>Walletfy ¡Mucho más que una billetera virtual!</h2>
                                 <div className='pastillas'>
                                     <div className='row'>
                                         <Pastillas pastilla = {pastilla}/>

@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from "react-router-dom";
 import iconos from '../assets/iconos';
+import { motion } from 'framer-motion';
 
 
 const Footer = () => {
@@ -9,17 +10,22 @@ const Footer = () => {
             <footer className='bg-light'>
                 <div className='container footer-w'>
                     <div className='row'>
-                        <div className='col-12 col-lg-2 pb-2 d-flex justify-content-center'>
-                            <img src={iconos.Iconow} alt="Icono Walletfy" className='footer-img' />
-                        </div>
+                        <motion.div className='col-12 col-lg-2 pb-2 d-flex justify-content-center'
+                         
+                        >
+                            <motion.img src={iconos.Iconow} alt="Icono Walletfy" className='footer-img' 
+                          animate={{ rotate: 360 }}
+                          transition={{ duration: 0.5 }}
+                            />
+                        </motion.div>
                         <div className='col-12 col-lg-6 align-self-center d-none d-lg-block'>
                             <div className='row'>
                                 <div className='col-8 '>
                                 <ul>
-                                    <li><Link to="/">Inicio</Link></li>
-                                    <li><Link to="/sobrenosotros">Sobre Nosotros</Link></li>
-                                    <li><Link to="/contactos">Contactos</Link></li>
-                                    <li><a href="#">Más Walletfy</a></li>
+                                    <li><Link to="/" className='text-dark'>Inicio</Link></li>
+                                    <li><Link to="/sobrenosotros" className='text-dark'>Sobre Nosotros</Link></li>
+                                    <li><Link to="/contactos" className='text-dark'>Contactos</Link></li>
+                                    <li><a href="#" className='text-dark'>Más Walletfy</a></li>
                                 </ul>
                                 </div>
                             </div>

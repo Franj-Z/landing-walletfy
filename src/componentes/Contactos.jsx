@@ -8,7 +8,7 @@ const Contactos = () => {
 
     return ( 
         <Fragment>
-             <div class="container mb-5">
+             <div class="container mb-3">
                 <div class="row">
                     <div id="galeria">
                         
@@ -17,7 +17,7 @@ const Contactos = () => {
                             </div>
                     </div>
                 </div>
-                <h2 class= "display-6 fw-bold mt-5 mb-5 text-center" > ¡CONTACTATE CON NOSOTROS! </h2>
+                <h2 class= "display-6 fw-bold mt-5 text-center title-contact" > ¡CONTACTATE CON NOSOTROS! </h2>
             </div>
 
 
@@ -29,7 +29,7 @@ const Contactos = () => {
                     
                   
                     <div className='col-12 col-md-12 col-lg-6'>
-                        <aside className="contacto">
+                        <aside className="contacto my-5">
                         <SeccionContactos1/>
                         <SeccionContactos2/>  
                         </aside> 

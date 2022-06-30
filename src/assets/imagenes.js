@@ -1,5 +1,5 @@
 
-import home from './imagenes/Home.png';
+import home from './imagenes/home.png';
 import icono from './imagenes/walletfy.jpg';
 import team from './imagenes/team.jpeg';
 import team3 from './imagenes/team.jpg';
