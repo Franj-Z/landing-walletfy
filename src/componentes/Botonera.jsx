@@ -26,7 +26,7 @@ const Botonera = () => {
                                         <Link className="nav-link boton text-dark " to="/sobrenosotros">Sobre Nosotros</Link>
                                     </li>
                                     <li className="nav-item  me-2 position-relative">
-                                        <Link className="nav-link boton text-dark " to="/contactos">Contactos</Link>
+                                        <Link className="nav-link boton text-dark " to="/contactos">Contacto</Link>
                                     </li>
                                 </ul>
                             </div>

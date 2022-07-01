@@ -129,13 +129,13 @@ const SeccionContactos2 = () => {
 
 
                                             <div className="form-group my-3">
-                                            <label htmlFor="options">¿De que quieres hablar? *</label>
+                                            <label htmlFor="options">¿De qué querés hablar? *</label>
 
                                             <select className="form-select" name="options" value={options}
                                                 onChange={(e) => setInput(e.target.value)}>
-                                            <option value="">Seleccione una opcion</option>
+                                            <option value="">Seleccioná una opcion</option>
                                             <option value="option1">Financiero</option>
-                                            <option value="option2">Soporte tecnico</option>
+                                            <option value="option2">Soporte técnico</option>
                                             <option value="option3">Preguntas y sugerencias</option>
                                             </select>
 
@@ -148,7 +148,7 @@ const SeccionContactos2 = () => {
                                                 <label htmlFor="comentario">Tu mensaje *</label>
                                                 <textarea id="comentario" name="comentario" value={input.comentario}
                                                 onChange={(e) => handleChange(e)} className="form-control" cols="30" rows="5"></textarea>
-                                                <small id="ayudamail" className="form-text text-muted">Ingrese los detalles de su solicitud. Un miembro de nuestro equipo de soporte le responderá lo antes posible. </small>
+                                                <small id="ayudamail" className="form-text text-muted">Ingresá los detalles de tu solicitud. Un miembro de nuestro equipo de soporte le responderá lo antes posible. </small>
                                                 {error.comentario && (
                                                     <p className="text-danger"> {error.comentario}</p>
                                                 )}           
