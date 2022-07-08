@@ -31,7 +31,7 @@ const SeccionSobre3 = () => {
                     <div className='row d-3 position-relative mb-5'>
                             <div className='col-12 text-center '>
                                 <h1 className='h-s'>Conocé a nuestro equipo</h1>
-                                <p className='p-s'>Walletfy fue fundado por estudiantes de la Escuela Da Vinci que querían hacer que la educación financiera fuera más divertida y atractiva para los adultos jóvenes. Hoy, Walletfy cuenta con un equipo diverso de profesionales calificados que lo llevan al siguiente nivel, somos alrededor de... 2 personas.</p>
+                                <p className='p-s'>Walletfy fue fundado por estudiantes de la Escuela Da Vinci que querían hacer que la educación financiera fuera más divertida y atractiva para los adultos jóvenes. Hoy, Walletfy cuenta con un equipo diverso de profesionales calificados que lo llevan al siguiente nivel.</p>
                             </div>
                             <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center equipo">
                                 <CardEquipo equipo= {equipo}/>
