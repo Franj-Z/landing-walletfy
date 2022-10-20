@@ -97,11 +97,11 @@ const SeccionContactos1 = () => {
                     </div>
 
                     <div className="form-group my-3">
-                        <label htmlFor="options">¿De que quieres hablar? *</label>
+                        <label htmlFor="options">¿De que querés hablar? *</label>
                             <Select
                                 options = { opciones }
                                 onChange = { handleSelectChange }
-                                placeholder="Seleccione una opción"
+                                placeholder="Seleccioná una opción"
                             />
                     </div>
                     <div className="form-group my-3">
@@ -118,7 +118,7 @@ const SeccionContactos1 = () => {
                                     >
                         </textarea>
                         {errors.comentario?.type === 'required' && <p className='text-danger text-small d-block mb-2'>El campo comentario es requerido</p>}
-                        <small id="ayudamail" className="form-text text-muted">Ingrese los detalles de su solicitud. Un miembro de nuestro equipo de soporte le responderá lo antes posible. </small>                                 
+                        <small id="ayudamail" className="form-text text-muted">Ingresá los detalles de tu solicitud. Un miembro de nuestro equipo de soporte le responderá lo antes posible. </small>                                 
                     </div>
                     <div className='text-center'>
                         <input type="submit" value="Enviar" className='btn btn-primary' />

@@ -16,7 +16,7 @@ const Contactos = () => {
                             </div>
                     </div>
                 </div>
-                <h2 className= "display-6 fw-bold mt-5 text-center title-contact" > ¡CONTACTATE CON NOSOTROS! </h2>
+                <h2 className= "display-6 fw-bold mt-5 text-center title-contact" > ¡CONTACTÁTE CON NOSOTROS! </h2>
             </div>
 
 

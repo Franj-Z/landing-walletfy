@@ -11,7 +11,7 @@ const SeccionHome4 = () => {
                             <img src={imagenes.Logo2} alt="logo" className='logo2' />
                         </div>
                         <div className='col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6'>
-                            <p className='anunciop'>Mantente al tanto de todos tus movimiento mientras aprendes del mundo de finanzas</p>
+                            <p className='anunciop'>Mantenete al tanto de todos tus movimiento mientras aprendés del mundo de finanzas</p>
                         </div>
                         <div className='col col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2'>
                             <button className='btn btn-primary btn-lg'>Saber más</button>
